@@ -812,7 +812,7 @@ function renderRiwayat() {
       var d = new Date(o.created_at).toLocaleDateString('id-ID', {day:'2-digit', month:'long', year:'numeric'});
       return '<div class="ri"><div><div class="ri-nm">' + o.paket + '</div><div class="ri-m">' + o.jumlah + 'M &bull; ' + d + '</div></div>'
            + '<div style="display:flex;align-items:center;gap:6px"><div class="ri-pr">Rp' + o.total.toLocaleString('id-ID') + '</div>'
-           + '<div class="ri-st">' + o.status + '</div></div></div>';
+           + '</div></div>';
     }).join('');
     el.innerHTML = '<div class="rbox"><div class="rt">Riwayat Pesanan (' + r.data.length + ')</div>' + rows + '</div>';
   });
